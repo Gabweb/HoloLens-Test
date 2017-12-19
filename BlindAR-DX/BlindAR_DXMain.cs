@@ -22,8 +22,6 @@ using System.Collections.Generic;
 
 using BlindAR_DX.Classes;
 
-using OpenCvSharp;
-
 #if DRAW_SAMPLE_CONTENT
 using BlindAR_DX.Content;
 #endif
@@ -63,6 +61,7 @@ namespace BlindAR_DX
         List<Gamepad>                       gamepads = new List<Gamepad>();
 
         FingerTracking fingerTracker;
+        OpenCVBridge.OpenCVHelper test;
 
         // Keep track of mouse input.
         bool                                pointerPressed = false;
@@ -73,7 +72,6 @@ namespace BlindAR_DX
         /// <param name="deviceResources"></param>
         public BlindAR_DXMain(DeviceResources deviceResources)
         {
-            Mat src = new Mat("lenna.png", ImreadModes.GrayScale);
             this.deviceResources = deviceResources;
 
             // Register to be notified if the Direct3D device is lost.
@@ -144,6 +142,8 @@ namespace BlindAR_DX
             //   anchor will use the corrected position starting in the next frame after the correction has
             //   occurred.
             fingerTracker = new FingerTracking(referenceFrame, holographicSpace);
+
+            test = new OpenCVBridge.OpenCVHelper();
         }
 
         public void Dispose()

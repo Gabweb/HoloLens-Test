@@ -67,6 +67,7 @@
     <Compile Include="AppView.cs" />
     <Compile Include="AppViewSource.cs" />
     <Compile Include="Classes\FingerTracking.cs" />
+    <Compile Include="Classes\OpenCVTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Common\CameraResources.cs" />
     <Compile Include="Common\DeviceResources.cs" />
@@ -110,14 +111,8 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <Import Project="ms.fxcompile.targets" />
   <ItemGroup>
-    <PackageReference Include="EmguCV">
-      <Version>3.1.0.1</Version>
-    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="OpenCvSharp3-AnyCPU">
-      <Version>3.3.1.20171117</Version>
+      <Version>6.0.5</Version>
     </PackageReference>
     <PackageReference Include="SharpDX">
       <Version>3.0.2</Version>
@@ -128,6 +123,12 @@
     <PackageReference Include="SharpDX.Direct3D11">
       <Version>3.0.2</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenCVBridge\OpenCVBridge.vcxproj">
+      <Project>{7f3d31c6-73da-4b41-ae33-2155153bcf4a}</Project>
+      <Name>OpenCVBridge</Name>
+    </ProjectReference>
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
