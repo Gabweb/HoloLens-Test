@@ -110,8 +110,14 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <Import Project="ms.fxcompile.targets" />
   <ItemGroup>
+    <PackageReference Include="EmguCV">
+      <Version>3.1.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="OpenCvSharp3-AnyCPU">
+      <Version>3.3.1.20171117</Version>
     </PackageReference>
     <PackageReference Include="SharpDX">
       <Version>3.0.2</Version>

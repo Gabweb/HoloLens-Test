@@ -22,6 +22,8 @@ using System.Collections.Generic;
 
 using BlindAR_DX.Classes;
 
+using OpenCvSharp;
+
 #if DRAW_SAMPLE_CONTENT
 using BlindAR_DX.Content;
 #endif
@@ -71,6 +73,7 @@ namespace BlindAR_DX
         /// <param name="deviceResources"></param>
         public BlindAR_DXMain(DeviceResources deviceResources)
         {
+            Mat src = new Mat("lenna.png", ImreadModes.GrayScale);
             this.deviceResources = deviceResources;
 
             // Register to be notified if the Direct3D device is lost.
