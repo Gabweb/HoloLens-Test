@@ -20,6 +20,8 @@ using System.Threading.Tasks;
 using Windows.Foundation;
 using System.Collections.Generic;
 
+using BlindAR_DX.Classes;
+
 #if DRAW_SAMPLE_CONTENT
 using BlindAR_DX.Content;
 #endif
@@ -57,6 +59,8 @@ namespace BlindAR_DX
 
         // Keep track of gamepads.
         List<Gamepad>                       gamepads = new List<Gamepad>();
+
+        FingerTracking fingerTracker;
 
         // Keep track of mouse input.
         bool                                pointerPressed = false;
@@ -136,6 +140,7 @@ namespace BlindAR_DX
             //   indicates to be of special interest. Anchor positions do not drift, but can be corrected; the
             //   anchor will use the corrected position starting in the next frame after the correction has
             //   occurred.
+            fingerTracker = new FingerTracking(referenceFrame, holographicSpace);
         }
 
         public void Dispose()
@@ -199,6 +204,7 @@ namespace BlindAR_DX
             // two meters in front of the user.
             spinningCubeRenderer.PositionHologram(pose);
 #endif
+            spinningCubeRenderer.position = fingerTracker.position;
 
             timer.Tick(() => 
             {

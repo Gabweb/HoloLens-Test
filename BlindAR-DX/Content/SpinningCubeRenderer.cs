@@ -25,7 +25,7 @@ namespace BlindAR_DX.Content
         // System resources for cube geometry.
         private ModelConstantBuffer                 modelConstantBufferData;
         private int                                 indexCount = 0;
-        private Vector3                             position = new Vector3(0.0f, 0.0f, -2.0f);
+        public Vector3                              position = new Vector3(0.0f, 0.0f, -2.0f);
 
         // Variables used with the rendering loop.
         private bool                                loadingComplete = false;
@@ -225,7 +225,7 @@ namespace BlindAR_DX.Content
             // Note that the cube size has changed from the default DirectX app
             // template. Windows Holographic is scaled in meters, so to draw the
             // cube at a comfortable size we made the cube width 0.2 m (20 cm).
-            VertexPositionColor[] cubeVertices =
+            /*VertexPositionColor[] cubeVertices =
             {
                 new VertexPositionColor(new Vector3(-0.1f, -0.1f, -0.1f), new Vector3(0.0f, 0.0f, 0.0f)),
                 new VertexPositionColor(new Vector3(-0.1f, -0.1f,  0.1f), new Vector3(0.0f, 0.0f, 1.0f)),
@@ -235,7 +235,21 @@ namespace BlindAR_DX.Content
                 new VertexPositionColor(new Vector3( 0.1f, -0.1f,  0.1f), new Vector3(1.0f, 0.0f, 1.0f)),
                 new VertexPositionColor(new Vector3( 0.1f,  0.1f, -0.1f), new Vector3(1.0f, 1.0f, 0.0f)),
                 new VertexPositionColor(new Vector3( 0.1f,  0.1f,  0.1f), new Vector3(1.0f, 1.0f, 1.0f)),
+            };*/
+
+            VertexPositionColor[] cubeVertices =
+            {
+                new VertexPositionColor(new Vector3(-0.01f, -0.01f, -0.01f), new Vector3(0.0f, 0.0f, 0.0f)),
+                new VertexPositionColor(new Vector3(-0.01f, -0.01f,  0.01f), new Vector3(0.0f, 0.0f, 1.0f)),
+                new VertexPositionColor(new Vector3(-0.01f,  0.01f, -0.01f), new Vector3(0.0f, 1.0f, 0.0f)),
+                new VertexPositionColor(new Vector3(-0.01f,  0.01f,  0.01f), new Vector3(0.0f, 1.0f, 1.0f)),
+                new VertexPositionColor(new Vector3( 0.01f, -0.01f, -0.01f), new Vector3(1.0f, 0.0f, 0.0f)),
+                new VertexPositionColor(new Vector3( 0.01f, -0.01f,  0.01f), new Vector3(1.0f, 0.0f, 1.0f)),
+                new VertexPositionColor(new Vector3( 0.01f,  0.01f, -0.01f), new Vector3(1.0f, 1.0f, 0.0f)),
+                new VertexPositionColor(new Vector3( 0.01f,  0.01f,  0.01f), new Vector3(1.0f, 1.0f, 1.0f)),
             };
+
+
 
             vertexBuffer = this.ToDispose(SharpDX.Direct3D11.Buffer.Create(
                 deviceResources.D3DDevice,
