@@ -125,8 +125,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OpenCVBridge\OpenCVBridge.vcxproj">
-      <Project>{7f3d31c6-73da-4b41-ae33-2155153bcf4a}</Project>
+    <ProjectReference Include="..\OpenCVHelper\OpenCVHelper.vcxproj">
+      <Project>{a9e78ef8-5849-4aa2-bd42-607b3bde3563}</Project>
       <Name>OpenCVBridge</Name>
     </ProjectReference>
   </ItemGroup>
