@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlindAR-DX", "BlindAR-DX\BlindAR-DX.csproj", "{2BA83E52-BB0C-4A70-8BCB-EDBC8A650045}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloLens", "BlindAR-DX\HoloLens.csproj", "{2BA83E52-BB0C-4A70-8BCB-EDBC8A650045}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCVHelper", "OpenCVBridge\OpenCVHelper.vcxproj", "{A9E78EF8-5849-4AA2-BD42-607B3BDE3563}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCVBridge", "OpenCVBridge\OpenCVHelper.vcxproj", "{A9E78EF8-5849-4AA2-BD42-607B3BDE3563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desktop-Webcam-Demo", "Desktop-Webcam-Demo\Desktop-Webcam-Demo.csproj", "{667E58F5-4D60-4059-B71F-BBF3D2877567}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,24 @@ Global
 		{A9E78EF8-5849-4AA2-BD42-607B3BDE3563}.Release|x64.Build.0 = Release|x64
 		{A9E78EF8-5849-4AA2-BD42-607B3BDE3563}.Release|x86.ActiveCfg = Release|Win32
 		{A9E78EF8-5849-4AA2-BD42-607B3BDE3563}.Release|x86.Build.0 = Release|Win32
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Debug|ARM.ActiveCfg = Debug|ARM
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Debug|ARM.Build.0 = Debug|ARM
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Debug|ARM.Deploy.0 = Debug|ARM
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Debug|x64.ActiveCfg = Debug|x64
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Debug|x64.Build.0 = Debug|x64
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Debug|x64.Deploy.0 = Debug|x64
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Debug|x86.ActiveCfg = Debug|x86
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Debug|x86.Build.0 = Debug|x86
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Debug|x86.Deploy.0 = Debug|x86
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Release|ARM.ActiveCfg = Release|ARM
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Release|ARM.Build.0 = Release|ARM
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Release|ARM.Deploy.0 = Release|ARM
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Release|x64.ActiveCfg = Release|x64
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Release|x64.Build.0 = Release|x64
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Release|x64.Deploy.0 = Release|x64
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Release|x86.ActiveCfg = Release|x86
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Release|x86.Build.0 = Release|x86
+		{667E58F5-4D60-4059-B71F-BBF3D2877567}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

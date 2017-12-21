@@ -67,7 +67,6 @@
     <Compile Include="AppView.cs" />
     <Compile Include="AppViewSource.cs" />
     <Compile Include="Classes\FingerTracking.cs" />
-    <Compile Include="Classes\OpenCVTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Common\CameraResources.cs" />
     <Compile Include="Common\DeviceResources.cs" />
