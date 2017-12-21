@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlindAR-DX", "BlindAR-DX\BlindAR-DX.csproj", "{2BA83E52-BB0C-4A70-8BCB-EDBC8A650045}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCVHelper", "OpenCVHelper\OpenCVHelper.vcxproj", "{A9E78EF8-5849-4AA2-BD42-607B3BDE3563}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCVHelper", "OpenCVBridge\OpenCVHelper.vcxproj", "{A9E78EF8-5849-4AA2-BD42-607B3BDE3563}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

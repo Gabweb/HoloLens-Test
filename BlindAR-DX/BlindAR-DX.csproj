@@ -125,12 +125,12 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OpenCVHelper\OpenCVHelper.vcxproj">
+    <ProjectReference Include="..\OpenCVBridge\OpenCVHelper.vcxproj">
       <Project>{a9e78ef8-5849-4aa2-bd42-607b3bde3563}</Project>
       <Name>OpenCVBridge</Name>
     </ProjectReference>
   </ItemGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
