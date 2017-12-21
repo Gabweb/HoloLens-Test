@@ -141,7 +141,7 @@
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="OpenCVHelper.cpp" />
-    <ClCompile Include="D:\TMP-Delete\HoloLensArucoTracking-master\TrackingPlugin\src\aruco_tracking.cpp" />
+    <ClCompile Include="aruco_tracking.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -1124,7 +1124,7 @@
       <Filter>include\opencv2</Filter>
     </ClInclude>
     <ClInclude Include="OpenCVHelper.h" />
-    <ClInclude Include="D:\TMP-Delete\HoloLensArucoTracking-master\TrackingPlugin\src\aruco_tracking.h" />
+    <ClInclude Include="aruco_tracking.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
